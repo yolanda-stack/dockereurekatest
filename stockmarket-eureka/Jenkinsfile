@@ -6,7 +6,7 @@ pipeline {
                            //表示Jenkins应该为Pipeline的这一部分分配一个执行者和工作区。
  //定义环境变量                         
   environment {
-	GIT_PROJECT_ADDR="https://github.com/yolanda-stack/dockereurekatest.git" //项目的git地址
+	GIT_PROJECT_ADDR="https://github.com/yolanda-stack/stockmarket.git" //项目的git地址
 	JENKINS_WORKSPACE="/var/jenkins_home/workspace"    //jenkins存放文件的地址
 	PROJECT_NAME="stockmarket-eureka"  			        // 项目名
 	JAR_NAME="stockmarket-eureka.jar"                     // 项目生成的jar的名字
