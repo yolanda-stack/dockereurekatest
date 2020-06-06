@@ -2,11 +2,11 @@
 
 
 
-FROM hub.c.163.com/wuxukun/maven-aliyun:3-jdk-8      //ÏÂÔØmavenÓëjavaµÄ¾µÏñ
- # Ö¸¶¨µ±Ç°²Ù×÷Ä¿Â¼
-WORKDIR /stockmarketeureka                                          
-#Ö¸¶¨¶ÔÍâ¶Ë¿ÚºÅ
+FROM hub.c.163.com/wuxukun/maven-aliyun:3-jdk-8      //ä¸‹è½½mavenä¸javaçš„é•œåƒ
+ # æŒ‡å®šå½“å‰æ“ä½œç›®å½•
+WORKDIR /stockmarket-eureka                                          
+#æŒ‡å®šå¯¹å¤–ç«¯å£å·
  EXPOSE 8761         
-#Æô¶¯java³ÌĞò
-#--spring.profiles.active=dev ¶à»·¾³ÏÂÖ¸¶¨»·¾³ ¡£ -cÎªÇå³ıÒÔÇ°Æô¶¯µÄÊı¾İ
+#å¯åŠ¨javaç¨‹åº
+#--spring.profiles.active=dev å¤šç¯å¢ƒä¸‹æŒ‡å®šç¯å¢ƒ ã€‚ -cä¸ºæ¸…é™¤ä»¥å‰å¯åŠ¨çš„æ•°æ®
 ENTRYPOINT ["java","-jar","ms_backend.jar","--spring.profiles.active=dev","-c"]
